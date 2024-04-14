@@ -1,0 +1,26 @@
+﻿@using temp2.Models
+@model List<Products>
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Products</title>
+</head>
+<body>
+    <h1>Products</h1>
+
+    <ul>
+        @foreach (var product in Model)
+        {
+            <li>@product.Name - $@product.Price</li>
+        }
+    </ul>
+
+
+
+    <br>
+    <a asp-controller="Products" asp-action="Add" class="btn btn-primary">Add Product</a>
+</body>
+</html>
