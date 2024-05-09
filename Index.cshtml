@@ -4,9 +4,10 @@
 
 <head>
     <link rel="stylesheet" href="~/css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 </head>
 
-
+@*https://codepen.io/ocxigin/pen/gOqjRQJ*@
 
 
 
@@ -15,7 +16,7 @@
 
 <div class="container-fluid">
     <div class="row">
-        
+
         <div class="col-md-3">
             <nav id="sidebar">
 
@@ -25,39 +26,155 @@
                         <li>
                             <a href="#pageSubmenu1" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Κουζίνες</a>
                             <ul class="collapse list-unstyled" id="pageSubmenu1">
-                                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span> Εστιατώρια</a></li>
-                                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span> Καφέ και Τσάι</a></li>
-                                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span> Σουβλάκια</a></li>
-                                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span> Πίτσα</a></li>
-                                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span> Burgers</a></li>
-                                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span> Ασιάτικη</a></li>
+                                <li style="margin-bottom: 4px;">
+                                    <label class="form-check-label" style="color: black;" for="checkboxRestaurants">
+                                        <i class="fa-solid fa-chevron-right mr-2"></i>
+                                        <input class="form-check-input" type="checkbox" id="checkboxRestaurants" value="Restaurants" aria-label="Restaurants">
+                                        Εστιατώρια
+                                    </label>
+                                </li>
+                                <li style="margin-bottom: 4px;">
+                                    <label class="form-check-label" style="color: black;" for="checkboxCafe">
+                                        <i class="fa-solid fa-chevron-right mr-2"></i>
+                                        <input class="form-check-input" type="checkbox" id="checkboxCafe" value="Cafe" aria-label="Cafe">
+                                        Καφέ και Τσάι
+                                    </label>
+                                </li>
+                                <li style="margin-bottom: 4px;">
+                                    <label class="form-check-label" style="color: black;" for="checkboxSouvlakia">
+                                        <i class="fa-solid fa-chevron-right mr-2"></i>
+                                        <input class="form-check-input" type="checkbox" id="checkboxSouvlakia" value="Souvlakia" aria-label="Souvlakia">
+                                        Σουβλάκια
+                                    </label>
+                                </li>
+                                <li style="margin-bottom: 4px;">
+                                    <label class="form-check-label" style="color: black;" for="checkboxPizza">
+                                        <i class="fa-solid fa-chevron-right mr-2"></i>
+                                        <input class="form-check-input" type="checkbox" id="checkboxPizza" value="Pizza" aria-label="Pizza">
+                                        Πίτσα
+                                    </label>
+                                </li>
+                                <li style="margin-bottom: 4px;">
+                                    <label class="form-check-label" style="color: black;" for="checkboxBurgers">
+                                        <i class="fa-solid fa-chevron-right mr-2"></i>
+                                        <input class="form-check-input" type="checkbox" id="checkboxBurgers" value="Burgers" aria-label="Burgers">
+                                        Burgers
+                                    </label>
+                                </li>
+                                <li style="margin-bottom: 4px;">
+                                    <label class="form-check-label" style="color: black;" for="checkboxAsian">
+                                        <i class="fa-solid fa-chevron-right mr-2"></i>
+                                        <input class="form-check-input" type="checkbox" id="checkboxAsian" value="Asian" aria-label="Asian">
+                                        Ασιάτικη
+                                    </label>
+                                </li>
                             </ul>
                         </li>
                         <li>
                             <a href="#pageSubmenu2" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Γέυματα</a>
                             <ul class="collapse list-unstyled" id="pageSubmenu2">
-                                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span> Πρωινό</a></li>
-                                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span> Brunch</a></li>
-                                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span> Μεσημεριανό</a></li>
-                                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span> Βραδινό</a></li>
+                                <li style="margin-bottom: 4px;">
+                                    <label class="form-check-label" style="color: black;" for="checkboxBreakfast">
+                                        <i class="fa-solid fa-chevron-right mr-2"></i>
+                                        <input class="form-check-input" type="checkbox" id="checkboxBreakfast" value="Breakfast" aria-label="Breakfast">
+                                        Πρωινό
+                                    </label>
+                                </li>
+                                <li style="margin-bottom: 4px;">
+                                    <label class="form-check-label" style="color: black;" for="checkboxBrunch">
+                                        <i class="fa-solid fa-chevron-right mr-2"></i>
+                                        <input class="form-check-input" type="checkbox" id="checkboxBrunch" value="Brunch" aria-label="Brunch">
+                                        Brunch
+                                    </label>
+                                </li>
+                                <li style="margin-bottom: 4px;">
+                                    <label class="form-check-label" style="color: black;" for="checkboxLunch">
+                                        <i class="fa-solid fa-chevron-right mr-2"></i>
+                                        <input class="form-check-input" type="checkbox" id="checkboxLunch" value="Lunch" aria-label="Lunch">
+                                        Μεσημεριανό
+                                    </label>
+                                </li>
+                                <li style="margin-bottom: 4px;">
+                                    <label class="form-check-label" style="color: black;" for="checkboxDinner">
+                                        <i class="fa-solid fa-chevron-right mr-2"></i>
+                                        <input class="form-check-input" type="checkbox" id="checkboxDinner" value="Dinner" aria-label="Dinner">
+                                        Βραδινό
+                                    </label>
+                                </li>
+
                             </ul>
                         </li>
                         <li>
                             <a href="#pageSubmenu3" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Τιμές</a>
                             <ul class="collapse list-unstyled" id="pageSubmenu3">
-                                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span> Cheap eats</a></li>
-                                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span> Mid-range</a></li>
-                                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span> Fine Dining</a></li>
+                                <li style="margin-bottom: 4px;">
+                                    <label class="form-check-label" style="color: black;" for="checkboxCheapEats">
+                                        <i class="fa-solid fa-chevron-right mr-2"></i>
+                                        <input class="form-check-input" type="checkbox" id="checkboxCheapEats" value="CheapEats" aria-label="CheapEats">
+                                        Cheap eats
+                                    </label>
+                                </li>
+                                <li style="margin-bottom: 4px;">
+                                    <label class="form-check-label" style="color: black;" for="checkboxMidRange">
+                                        <i class="fa-solid fa-chevron-right mr-2"></i>
+                                        <input class="form-check-input" type="checkbox" id="checkboxMidRange" value="MidRange" aria-label="MidRange">
+                                        Mid-range
+                                    </label>
+                                </li>
+                                <li style="margin-bottom: 4px;">
+                                    <label class="form-check-label" style="color: black;" for="checkboxFineDining">
+                                        <i class="fa-solid fa-chevron-right mr-2"></i>
+                                        <input class="form-check-input" type="checkbox" id="checkboxFineDining" value="FineDining" aria-label="FineDining">
+                                        Fine Dining
+                                    </label>
+                                </li>
+
                             </ul>
                         </li>
                         <li>
                             <a href="#pageSubmenu4" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Αστέρια</a>
                             <ul class="collapse list-unstyled" id="pageSubmenu4">
-                                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span> ⭐️</a></li>
-                                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span> ⭐️⭐️</a></li>
-                                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span> ⭐️⭐️⭐️</a></li>
-                                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span> ⭐️⭐️⭐️⭐️</a></li>
-                                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span> ⭐️⭐️⭐️⭐️⭐️</a></li>
+                                <li style="margin-bottom: 10px;">
+                                    <label class="form-check-label" style="color: black;" for="checkboxStar1">
+                                        <i class="fa-solid fa-chevron-right mr-2"></i>
+                                        <input class="form-check-input" type="checkbox" id="checkboxStar1" value="Star1" aria-label="Star1">
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="far fa-star text-warning"></i><i class="far fa-star text-warning"></i><i class="far fa-star text-warning"></i><i class="far fa-star text-warning"></i>
+                                    </label>
+                                </li>
+
+                                <li style="margin-bottom: 4px;">
+                                    <label class="form-check-label" style="color: black;" for="checkboxStar2">
+                                        <i class="fa-solid fa-chevron-right mr-2"></i>
+                                        <input class="form-check-input" type="checkbox" id="checkboxStar2" value="Star2" aria-label="Star2">
+                                        <i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i>
+                                        <i class="far fa-star text-warning"></i><i class="far fa-star text-warning"></i><i class="far fa-star text-warning"></i>
+                                    </label>
+                                </li>
+                                <li style="margin-bottom: 4px;">
+                                    <label class="form-check-label" style="color: black;" for="checkboxStar3">
+                                        <i class="fa-solid fa-chevron-right mr-2"></i>
+                                        <input class="form-check-input" type="checkbox" id="checkboxStar3" value="Star3" aria-label="Star3">
+                                        <i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i>
+                                        <i class="far fa-star text-warning"></i><i class="far fa-star text-warning"></i>
+                                    </label>
+                                </li>
+                                <li style="margin-bottom: 4px;">
+                                    <label class="form-check-label" style="color: black;" for="checkboxStar4">
+                                        <i class="fa-solid fa-chevron-right mr-2"></i>
+                                        <input class="form-check-input" type="checkbox" id="checkboxStar4" value="Star4" aria-label="Star4">
+                                        <i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i>
+                                        <i class="far fa-star text-warning"></i>
+                                    </label>
+                                </li>
+                                <li style="margin-bottom: 4px;">
+                                    <label class="form-check-label" style="color: black;" for="checkboxStar5">
+                                        <i class="fa-solid fa-chevron-right mr-2"></i>
+                                        <input class="form-check-input" type="checkbox" id="checkboxStar5" value="Star5" aria-label="Star5">
+                                        <i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i>
+                                    </label>
+                                </li>
+
                             </ul>
                         </li>
                     </ul>
@@ -72,9 +189,8 @@
                             <a href="#" class="tag-cloud-link">Κουκάκι</a>
                         </div>
                     </div>
+                    <button type="button" class="btn btn-primary" style="background-color: black;">Apply</button>
                 </div>
-
-
             </nav>
         </div>
 
@@ -84,10 +200,11 @@
 
 
                 <div class="carousel-indicators">
-                    <button type="button" style="color: green;" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" style="background-color: black;" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" style="background-color: black;" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" style="background-color: black;" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
                 </div>
+
 
 
 
@@ -105,18 +222,18 @@
                                         <image href="https://source.unsplash.com/unpaired-red-nike-sneaker-164_6wVEHfI" height="100%" width="100%" />
                                     </svg>
                                     <div class="card-body">
-                                        <i class="fa-solid fa-star text-warning"></i>
-                                        <i class="fa-solid fa-star text-warning"></i>
-                                        <i class="fa-solid fa-star text-warning"></i>
-                                        <i class="fa-solid fa-star text-warning"></i>
-                                        <i class="fa-regular fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="far fa-star text-warning"></i>
+                                        <i class="far fa-star text-warning"></i>
                                         <p class="card-text">Nike</p>
                                         <div class="d-flex justify-content-between align-items-center">
                                             <div class="btn-group">
                                                 <button type="button" class="btn btn-sm btn-outline-warning">View</button>
                                                 <button type="button" class="btn btn-sm btn-outline-warning"><i class="fa-solid fa-cart-shopping"></i></button>
                                             </div>
-                                            <small class="text-bg-warning px-2 rounded">$800.00</small>
+                                            <small class="text-bg-warning px-2 rounded">$900.00</small>
                                         </div>
 
                                     </div>
@@ -130,11 +247,11 @@
                                         <image href="https://source.unsplash.com/white-adidas-low-top-sneakers-JM-qKEd1GMI" height="100%" width="100%" />
                                     </svg>
                                     <div class="card-body">
-                                        <i class="fa-solid fa-star text-warning"></i>
-                                        <i class="fa-solid fa-star text-warning"></i>
-                                        <i class="fa-solid fa-star text-warning"></i>
-                                        <i class="fa-regular fa-star text-warning"></i>
-                                        <i class="fa-regular fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="far fa-star text-warning"></i>
+                                        <i class="far fa-star text-warning"></i>
+                                        <i class="far fa-star text-warning"></i>
                                         <p class="card-text">Adidas</p>
                                         <div class="d-flex justify-content-between align-items-center">
                                             <div class="btn-group">
@@ -234,7 +351,7 @@
                                         <image href="https://source.unsplash.com/black-and-silver-sony-headphones-aiWjNA46Urc" height="100%" width="100%" />
                                     </svg>
                                     <div class="card-body">
-                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
                                         <i class="fa-solid fa-star text-warning"></i>
                                         <i class="fa-solid fa-star text-warning"></i>
                                         <i class="fa-regular fa-star text-warning"></i>
@@ -332,21 +449,284 @@
                     </div> <!--[carousel-item-3]-->
                 </div><!--[End of Container]-->
 
-                <div class="control-btn">
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                        <i class="fa-solid fa-arrow-right"></i>
+                <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
 
-                        <span class="carousel-control-next-icon visually-hidden" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon visually-hidden" aria-hidden="true"></span>
-                        <i class="fa-solid fa-arrow-left"></i>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                </div>
             </div>
+
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+
+
+                <div class="carousel-indicators">
+                    <button type="button" style="background-color: black;" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" style="background-color: black;" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" style="background-color: black;" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+
+
+
+
+                <div class="carousel-inner">
+                    <!--The Carousel Container-->
+
+
+                    <div class="carousel-item carousel-item-1 active">
+                        <!--The Carousel item 1-->
+                        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                            <div class="col">
+                                <div class="card shadow-sm mx-8 my-5">
+                                    <small class="text-bg-warning px-5 rounded text-bg-light new">new</small>
+                                    <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                                        <image href="https://source.unsplash.com/unpaired-red-nike-sneaker-164_6wVEHfI" height="100%" width="100%" />
+                                    </svg>
+                                    <div class="card-body">
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="far fa-star text-warning"></i>
+                                        <i class="far fa-star text-warning"></i>
+                                        <p class="card-text">Nike</p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="btn-group">
+                                                <button type="button" class="btn btn-sm btn-outline-warning">View</button>
+                                                <button type="button" class="btn btn-sm btn-outline-warning"><i class="fa-solid fa-cart-shopping"></i></button>
+                                            </div>
+                                            <small class="text-bg-warning px-2 rounded">$900.00</small>
+                                        </div>
+
+                                    </div>
+                                </div><!--[end of card]-->
+                            </div>
+
+                            <div class="col">
+                                <div class="card shadow-sm mx-8 my-5">
+                                    <small class="text-bg-warning px-5 rounded text-bg-light new">new</small>
+                                    <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                                        <image href="https://source.unsplash.com/white-adidas-low-top-sneakers-JM-qKEd1GMI" height="100%" width="100%" />
+                                    </svg>
+                                    <div class="card-body">
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="far fa-star text-warning"></i>
+                                        <i class="far fa-star text-warning"></i>
+                                        <i class="far fa-star text-warning"></i>
+                                        <p class="card-text">Adidas</p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="btn-group">
+                                                <button type="button" class="btn btn-sm btn-outline-warning">View</button>
+                                                <button type="button" class="btn btn-sm btn-outline-warning"><i class="fa-solid fa-cart-shopping"></i></button>
+                                            </div>
+                                            <small class="text-bg-warning px-2 rounded">$600.00</small>
+                                        </div>
+                                    </div>
+                                </div><!--[end of card]-->
+                            </div>
+
+                            <div class="col">
+                                <div class="card shadow-sm mx-8 my-5">
+                                    <small class="text-bg-warning px-5 rounded text-bg-light new">new</small>
+                                    <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                                        <image href="https://source.unsplash.com/white-and-black-nike-air-force-1-low-XZ3EmAIWuz0" height="100%" width="100%" />
+                                    </svg>
+                                    <div class="card-body">
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-regular fa-star text-warning"></i>
+                                        <i class="fa-regular fa-star text-warning"></i>
+                                        <i class="fa-regular fa-star text-warning"></i>
+                                        <i class="fa-regular fa-star text-warning"></i>
+                                        <p class="card-text">Slat Sole Show</p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="btn-group">
+                                                <button type="button" class="btn btn-sm btn-outline-warning">View</button>
+                                                <button type="button" class="btn btn-sm btn-outline-warning"><i class="fa-solid fa-cart-shopping"></i></button>
+                                            </div>
+                                            <small class="text-bg-warning px-2 rounded">$500.00</small>
+                                        </div>
+
+                                    </div>
+                                </div><!--[end of card]-->
+                            </div>
+                        </div><!--[End of Carousel Item 1]-->
+                    </div>
+
+                    <!-- Carousel Item 2 -->
+                    <div class="carousel-item carousel-item-2">
+                        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                            <div class="col">
+                                <div class="card shadow-sm mx-8 my-5">
+                                    <small class="text-bg-warning px-5 rounded text-bg-light new">new</small>
+                                    <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                                        <image href="https://source.unsplash.com/flatlay-photography-of-wireless-headphones-PDX_a_82obo" height="100%" width="100%" />
+                                    </svg>
+                                    <div class="card-body">
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-regular fa-star text-warning"></i>
+                                        <i class="fa-regular fa-star text-warning"></i>
+                                        <i class="fa-regular fa-star text-warning"></i>
+                                        <p class="card-text">Black Glass Headset</p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="btn-group">
+                                                <button type="button" class="btn btn-sm btn-outline-warning">View</button>
+                                                <button type="button" class="btn btn-sm btn-outline-warning"><i class="fa-solid fa-cart-shopping"></i></button>
+                                            </div>
+                                            <small class="text-bg-warning px-2 rounded">$200.00</small>
+                                        </div>
+
+                                    </div>
+                                </div><!--[end of card]-->
+                            </div>
+
+                            <div class="col">
+                                <div class="card shadow-sm mx-8 my-5">
+                                    <small class="text-bg-warning px-5 rounded text-bg-light new">new</small>
+                                    <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                                        <image href="https://source.unsplash.com/gray-and-brown-corded-headphones-GI6L2pkiZgQ" height="100%" width="100%" />
+                                    </svg>
+                                    <div class="card-body">
+                                        <i class="fa-regular fa-star text-warning"></i>
+                                        <i class="fa-regular fa-star text-warning"></i>
+                                        <i class="fa-regular fa-star text-warning"></i>
+                                        <i class="fa-regular fa-star text-warning"></i>
+                                        <i class="fa-regular fa-star text-warning"></i>
+                                        <p class="card-text">Nano Stripe Headset</p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="btn-group">
+                                                <button type="button" class="btn btn-sm btn-outline-warning">View</button>
+                                                <button type="button" class="btn btn-sm btn-outline-warning"><i class="fa-solid fa-cart-shopping"></i></button>
+                                            </div>
+                                            <small class="text-bg-warning px-2 rounded">$300.00</small>
+                                        </div>
+
+                                    </div>
+                                </div><!--[end of card]-->
+                            </div>
+
+                            <div class="col">
+                                <div class="card shadow-sm mx-8 my-5">
+                                    <small class="text-bg-warning px-5 rounded text-bg-light new">new</small>
+                                    <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                                        <image href="https://source.unsplash.com/black-and-silver-sony-headphones-aiWjNA46Urc" height="100%" width="100%" />
+                                    </svg>
+                                    <div class="card-body">
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-regular fa-star text-warning"></i>
+                                        <i class="fa-regular fa-star text-warning"></i>
+                                        <p class="card-text">Steelseries</p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="btn-group">
+                                                <button type="button" class="btn btn-sm btn-outline-warning">View</button>
+                                                <button type="button" class="btn btn-sm btn-outline-warning"><i class="fa-solid fa-cart-shopping"></i></button>
+                                            </div>
+                                            <small class="text-bg-warning px-2 rounded">$500.00</small>
+                                        </div>
+                                    </div>
+                                </div><!--[end of card]-->
+                            </div>
+                        </div>
+                    </div> <!--[carousel-item-2]-->
+                    <!-- Carousel Item 3 -->
+                    <div class="carousel-item carousel-item-2">
+                        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                            <div class="col">
+                                <div class="card shadow-sm mx-8 my-5">
+                                    <small class="text-bg-warning px-5 rounded text-bg-light new">new</small>
+                                    <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                                        <image href="https://source.unsplash.com/space-gray-iphone-x-with-box-K1MxhTd6SKo" height="100%" width="100%" />
+                                    </svg>
+                                    <div class="card-body">
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <p class="card-text">iPhone 15</p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="btn-group">
+                                                <button type="button" class="btn btn-sm btn-outline-warning">View</button>
+                                                <button type="button" class="btn btn-sm btn-outline-warning"><i class="fa-solid fa-cart-shopping"></i></button>
+                                            </div>
+                                            <small class="text-bg-warning px-2 rounded">$2000.00</small>
+                                        </div>
+
+                                    </div>
+                                </div><!--[end of card]-->
+                            </div>
+
+                            <div class="col">
+                                <div class="card shadow-sm mx-8 my-5">
+                                    <small class="text-bg-warning px-5 rounded text-bg-light new">new</small>
+                                    <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                                        <image href="https://source.unsplash.com/silver-iphone-6-on-silver-macbook-gQ6NlDvRngU" height="100%" width="100%" />
+                                    </svg>
+                                    <div class="card-body">
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-regular fa-star text-warning"></i>
+                                        <i class="fa-regular fa-star text-warning"></i>
+                                        <i class="fa-regular fa-star text-warning"></i>
+                                        <p class="card-text">iPhone 14 Pro Max</p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="btn-group">
+                                                <button type="button" class="btn btn-sm btn-outline-warning">View</button>
+                                                <button type="button" class="btn btn-sm btn-outline-warning"><i class="fa-solid fa-cart-shopping"></i></button>
+                                            </div>
+                                            <small class="text-bg-warning px-2 rounded">$1500.00</small>
+                                        </div>
+
+                                    </div>
+                                </div><!--[end of card]-->
+                            </div>
+
+                            <div class="col">
+                                <div class="card shadow-sm mx-8 my-5">
+                                    <small class="text-bg-warning px-5 rounded text-bg-light new">new</small>
+                                    <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                                        <image href="https://source.unsplash.com/black-iphone-7-with-white-and-black-dice-YLNMXzXk8zs" height="100%" width="100%" />
+                                    </svg>
+                                    <div class="card-body">
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-solid fa-star text-warning"></i>
+                                        <i class="fa-regular fa-star text-warning"></i>
+                                        <i class="fa-regular fa-star text-warning"></i>
+                                        <p class="card-text">iPhone 14</p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="btn-group">
+                                                <button type="button" class="btn btn-sm btn-outline-warning">View</button>
+                                                <button type="button" class="btn btn-sm btn-outline-warning"><i class="fa-solid fa-cart-shopping"></i></button>
+                                            </div>
+                                            <small class="text-bg-warning px-2 rounded">$1200.00</small>
+                                        </div>
+                                    </div>
+                                </div><!--[end of card]-->
+                            </div>
+                        </div>
+                    </div> <!--[carousel-item-3]-->
+                </div><!--[End of Container]-->
+
+                <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+
+            </div>
+
+
+
+
         </div>
     </div>
 </div>
